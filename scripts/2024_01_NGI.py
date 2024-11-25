@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Script for the "Python basics for geoscience and geotechnics (Pilot course)"
+Script for the "Python basics for geoscience and geotechnics" course
 from the Norwegian Geotechnical Institute. The course is held in November to
 December 2024 in 4x4 hour sessions.
 
