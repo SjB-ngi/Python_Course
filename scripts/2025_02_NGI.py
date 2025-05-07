@@ -17,6 +17,9 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 # repetition
 
+### Boolean operators: or, and, not
+# These are used to do operations on True/False data, i.e boolean data
+
 
 ### control structures: conditional statements: if, elif, else, match cases,
 ### operators
@@ -50,9 +53,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # a while loop can be used to iterate over a list
 
 
-
-
-# # a better solution is however to use a for loop which is always finite
+# a better solution is however to use a for loop which is always finite
 
 
 # for i in range(len(...)): is a typical construction to get an index
@@ -71,9 +72,6 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 # it is short but comes at the price of readability
 
-### Boolean operators: or, and, not
-# These are used to do operations on True/False data, i.e boolean data
-
 
 
 # Exercise 6
@@ -81,8 +79,6 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 
 # Exercise 7
-
-
 
 
 
