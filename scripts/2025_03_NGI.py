@@ -246,6 +246,36 @@ def custom_std(c: list) -> float:
     variance = custom_variance(c)
     return variance**(1/2)
 
+
+def statistical_params(c: list) -> tuple:
+    """
+    This function calculates the mean, median, variance and standard deviation
+    of a list of numbers. It returns the values as a tuple.
+
+    Parameters
+    ----------
+    c : list
+        A list of numbers.
+
+    Returns
+    -------
+    mean : float
+        The mean of the numbers in the list.
+    median : float
+        The median of the numbers in the list.
+    variance : float
+        The variance of the numbers in the list.
+    std : float
+        The standard deviation of the numbers in the list.
+    """
+    mean = custom_mean(c)
+    median = custom_median(c)
+    variance = custom_variance(c)
+    std = custom_std(c)
+
+    return mean, median, variance, std
+
+
 # With all the functions defined, we can group the operations like this:
 mean = custom_mean(c)
 median = custom_median(c)
