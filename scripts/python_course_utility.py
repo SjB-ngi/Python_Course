@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Python file containing functions to be used in the "Python basics for
 geoscience and geotechnics" by the Norwegian Geotechnical Institute
@@ -79,7 +78,7 @@ def custom_variance(input_list: list) -> float:
     """
     # Use the mean function to compute the mean
     mean = custom_mean(input_list)
-
+    
     # Instantiate a temporary list
     variance_temp = []
 
@@ -96,7 +95,7 @@ def custom_variance(input_list: list) -> float:
 
 def custom_std(input_list: list) -> float:
     """
-
+    
 
     Parameters
     ----------
