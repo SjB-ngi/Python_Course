@@ -98,5 +98,3 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 
 # Exercise 7
-
-
