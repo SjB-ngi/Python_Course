@@ -185,7 +185,6 @@ book_authors = {"harry potter": "J.K. Rowling",
 
 
 # We can use the value of a dictionary item by indexing it with the key
-
 ucs_dict = {
     "granite": [90, 90, 91],
     "limestone": [78, 87, 89]
@@ -208,4 +207,48 @@ list(range(3, 10))
 list(range(3, 10, 2))
 
 
-# Code suggestions for Exercise 3 and 4 will be added after the next session
+# Exercise 3
+
+# We first instantiate the empty list
+rock_characters = []
+
+# Here we append the lengths of the names using the len function directly
+# inside the append function
+rock_characters.append(len("marl"))
+rock_characters.append(len("gneiss"))
+rock_characters.append(len("limestone"))
+rock_characters.append(len("eclogite"))
+
+print(rock_characters)
+
+# Now we sum the last three entries of the list
+rock_char_sum = rock_characters[-3] + rock_characters[-2] + rock_characters[-1]
+
+# Alternatively we could use the sum() function
+# rock_char_sum = sum(rock_characters[-3:])
+
+# Then we print the result using both formatting methods
+print("the result is: {}".format(rock_char_sum))
+print(f"the result is: {rock_char_sum}")
+
+
+# Exercise 4
+
+# We instantiate a list and a tuple with the same entries
+rock_list = ["gneiss", "marl", "limestone"]
+rock_tuple = ("gneiss", "marl", "limestone")
+
+# We print the first two entries of both, note that we use the index 2
+# which is not included in the output
+print(rock_list[0:2])
+print(rock_tuple[0:2])
+
+# We append an entry to the list, but not to the tuple since
+# tuples cannot be changed after assignment
+rock_list.append("greenschist")
+# rock_tuple.append("greenshchist") # Would have given an error
+
+# We change the second entry of the list, but not of the tuple
+# as tuples cannot be changed after assignment
+rock_list[1] = "dolomite"
+# rock_tuple[1] = "dolomite"        # Would have given an error
