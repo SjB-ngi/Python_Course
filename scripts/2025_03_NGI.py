@@ -12,7 +12,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 """
 
 ###########################
-# session 3 on 13th of December 2025
+# session 3 on 13th of October 2025
 ###########################
 
 # Exercise 3 - bonus

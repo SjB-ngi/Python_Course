@@ -12,7 +12,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 """
 
 ###########################
-# session 2 on 8th of November 2025
+# session 2 on 8th of October 2025
 ###########################
 
 # Review Exercise 3

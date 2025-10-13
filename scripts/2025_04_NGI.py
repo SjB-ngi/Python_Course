@@ -12,7 +12,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 """
 
 ###########################
-# session 4 on 15th of December 2025
+# session 4 on 15th of October 2025
 ###########################
 
 
