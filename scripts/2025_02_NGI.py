@@ -117,7 +117,7 @@ else:
 
 material = "sand"
 assumed_bulk_unit_weight = None  # initialize variable to None which means
-                                 # that it has no value yet
+# that it has no value yet
 
 if material == "clay":
     assumed_bulk_unit_weight = 18  # kN/m3
@@ -144,7 +144,6 @@ match material:
         assumed_bulk_unit_weight = 19  # kN/m3
 
 
-
 ### control structures: loops: while loop, for loop
 # loops are used to repeat parts of code
 
@@ -158,7 +157,7 @@ a = 1
 while a < 10:
     print(a)
     a += 1  # we increase a by 1 each round, otherwise
-            # the loop would run forever
+    # the loop would run forever
 
 
 # Exercise 5
@@ -174,7 +173,7 @@ last_two_sum = sum(fib_list[-2:])
 while last_two_sum < 200:
     fib_list.append(last_two_sum)
     last_two_sum = sum(fib_list[-2:])  # We update the sum of the last two
-                                       # numbers before the next round
+    # numbers before the next round
 
 # Finally we print the list
 print(fib_list)
@@ -226,7 +225,10 @@ for ucs, rock in zip(ucs_values, rocks):
 
 # a "list comprehension" is a 1 line for loop as an alternative to a normal
 # for loop
-[print(f"the rock is {rock}, and the ucs is {ucs}") for ucs, rock in zip(ucs_values, rocks)]
+[
+    print(f"the rock is {rock}, and the ucs is {ucs}")
+    for ucs, rock in zip(ucs_values, rocks)
+]
 
 # it is short but comes at the price of readability
 
@@ -271,3 +273,37 @@ for number in range(maxNum):
 print(factor_sum)
 
 # Exercise 7
+
+rocks = [
+    "granite",
+    "sandstone",
+    "basalt",
+    "limestone",
+    "tuff",
+    "quartzite",
+    "kaolin",
+    "phonolite",
+    "gneiss",
+    "sand",
+    "diabase",
+    "black coal",
+    "slate",
+    "andesite",
+    "andesite",
+    "gypsum and anhydrite",
+    "greywacke",
+    "suevite",
+]
+
+# We will first define the start year
+start_year = 2007
+
+# We will then loop through the rocks using enumerate to get both
+# the index and the rock name
+for i, rock in enumerate(rocks):
+
+    # For each successive rock, I add i to the start year to get the year
+    year = start_year + i
+
+    # This can now be printed
+    print(f"the rock of the year in {year} was {rock}.")
