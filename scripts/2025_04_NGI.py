@@ -44,9 +44,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # documented. When you're using any community module you can check the
 # documentation to find out how the module works
 
-# Code environments hold collections of modules you have installed. In this
-# course we have been using Anaconda, which provides a nice overview of your
-# environments in the Anaconda Navigator.
+# Code environments hold collections of modules you have installed.
 
 # numpy works based on arrays and is much faster than classical loops
 # The norm is to import numpy using the short name "np"
