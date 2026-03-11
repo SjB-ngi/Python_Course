@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*-
 """
 Python file containing functions to be used in the "Python basics for
 geoscience and geotechnics" by the Norwegian Geotechnical Institute
 
 @author: Sjur Beyer, sjur.beyer@ngi.no
 """
+
 
 import time
 
@@ -21,10 +21,10 @@ def custom_median(input_list: list) -> float:
     Computes the median of a list of numerical values using only
     pure Python functions.
 
-    The median is the middle value in a sorted list. 
+    The median is the middle value in a sorted list.
     If the list has an even number of elements, the median is the average
     of the two middle elements.
-    
+
     Parameters
     ----------
     input_list : list
@@ -94,6 +94,20 @@ def custom_variance(input_list: list) -> float:
 
 
 def custom_std(input_list: list) -> float:
+    """
+    
+
+    Parameters
+    ----------
+    input_list : list
+        DESCRIPTION.
+
+    Returns
+    -------
+    float
+        DESCRIPTION.
+
+    """
     variance = custom_variance(input_list)
     return variance**(1/2)
 
