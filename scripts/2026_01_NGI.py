@@ -18,6 +18,19 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 ### introduction and overview over uv and VS Code
 
+""" Terminal
+
+Create uv environment:
+uv init --no-readme
+
+Adding ipykernel to environment:
+uv add ipykernel
+
+Activate environment:
+.venv\Scripts\activate
+
+"""
+
 
 ### basic datatypes: strings, integers, floats, print function
 
