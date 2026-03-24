@@ -21,7 +21,9 @@ ucs = 175
 unit = "MPa"
 
 # Write your solution below:
-
+print("The UCS of {} is {} {}.".format(rock_name, ucs, unit))
+print(f"The UCS of {rock_name} is {ucs} {unit}.")
+print(f"{rock_name}_{ucs}{unit}.jpg")
 
 
 
@@ -45,8 +47,12 @@ Using list slicing only (no loops), retrieve and print:
 depths = [1.0, 2.5, 3.8, 5.1, 6.4, 7.7, 9.0, 10.3, 11.6, 13.0]
 
 # Write your solution below:
-
-
+print(depths[0])
+print(depths[-1])
+print(depths[0:3])
+print(depths[2:6])
+print(depths[::2])
+print(depths[::-1])
 
 
 """
@@ -74,7 +80,16 @@ rock_properties = {
 }
 
 # Write your solution below:
-
+# 1
+print(f"The UCS of sandstone is {rock_properties['sandstone'][0]} MPa.")
+# 2
+rock_properties["mudstone"] = [20, 2500]
+print(rock_properties["mudstone"])
+# 3
+rock_properties["limestone"][0] = 95
+print(rock_properties["limestone"][0])
+# 4
+print(len(rock_properties)) # print total number of keys
 
 
 
@@ -104,3 +119,9 @@ Gs = 2.7
 gamma_w = 9.81  # kN/m³
 
 # Write your solution below:
+γ = W / V
+γ_d = γ / (1 + w)
+
+print(f"Unit weight: γ = {γ:.2f} [kN/m³]")
+print(f"Dry unit weight: γ_d = {γ_d:.2f} [kN/m³]")
+print(f"Void ratio: e = {(Gs * gamma_w / γ_d) - 1:.2f} [-]")
