@@ -20,9 +20,16 @@ Test cases:
 
 values = [7, 42, 17, 8, 9]
 
+print("Exercise 1: Find the Largest Value")
+
 # Write your solution below:
 
+largest = values[0]
+for value in values:
+    if value > largest:
+        largest = value
 
+print(largest)
 
 
 """
@@ -42,10 +49,17 @@ Test cases:
 """
 
 year = 2024
-
+print("\n\nExercise 2: Determine Leap Year")
 # Write your solution below:
 
-
+if year % 400 == 0:
+    print(f"{year} is a leap year.")
+elif year % 100 == 0:
+    print(f"{year} is NOT a leap year.")
+elif year % 4 == 0:
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is NOT a leap year.")
 
 
 """
@@ -71,9 +85,20 @@ Test cases:
 
 number = 105
 
+print("\n\nExercise 3: Raindrops")
 # Write your solution below:
 
+raindrop = ""
+if number % 3 == 0:
+    raindrop += "Pling"
+if number % 5 == 0:
+    raindrop += "Plang"
+if number % 7 == 0:
+    raindrop += "Plong"
+if raindrop == "":
+    raindrop = str(number)
 
+print(raindrop)
 
 
 """
@@ -92,9 +117,20 @@ Test cases:
   - [20, 15, 10, 5, 1]  → not sorted
 """
 
+print("\n\nExercise 4: Check if Sorted")
 # Write your solution below:
 
+numbers = [1, 2, 3, 4, 5]
+is_sorted = True
+for i in range(len(numbers) - 1):
+    if numbers[i] > numbers[i + 1]:
+        is_sorted = False
+        break
 
+if is_sorted:
+    print("sorted")
+else:
+    print("not sorted")
 
 
 """
@@ -117,8 +153,14 @@ by character using concatenation (+=), then print the completed row string.
 width = 9
 height = 5
 
+print("\n\nExercise 5: Print a Rectangle")
 # Write your solution below:
 
+for row in range(height):
+    if row == 0 or row == height - 1:
+        print("#" * width)
+    else:
+        print("#" + " " * (width - 2) + "#")
 
 
 
@@ -143,11 +185,18 @@ rock_samples = [
     "limestone", "gneiss", "sandstone", "granite", "limestone"
 ]
 
+print("\n\nExercise 6: Count Rock Types")
 # Write your solution below:
 
+rock_dict = {}
+for rock in rock_samples:
+    if rock in rock_dict:
+        rock_dict[rock] += 1
+    else:
+        rock_dict[rock] = 1
 
-
-
+for rock, count in rock_dict.items():
+    print(f"{rock}: {count}")
 
 """
 ## Bonus Exercise: Hamming Distance
@@ -167,4 +216,12 @@ Test case:
 strand_a = "AACCTTGGAACCTTGG"
 strand_b = "AATCTCGGAATCTTAG"
 
+print("\n\nBonus Exercise: Hamming Distance")
 # Write your solution below:
+
+hamming_distance = 0
+for a, b in zip(strand_a, strand_b):
+    if a != b:
+        hamming_distance += 1
+
+print(f"Hamming distance = {hamming_distance}")
