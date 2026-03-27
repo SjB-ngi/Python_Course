@@ -18,7 +18,6 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # Recap of session 2
 
 # Zip function
-from tornado.concurrent import future_set_exception_unless_cancelled
 rocks = ['granite', 'sandstone', 'basalt', 'limestone', 'tuff', 'quartzite',
          'kaolin', 'phonolite', 'gneiss', 'sand', 'diabase', 'black coal',
          'slate', 'andesite', 'andesite', 'gypsum and anhydrite', 'greywacke',
