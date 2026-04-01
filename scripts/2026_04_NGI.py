@@ -15,22 +15,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # session 4 on 1st of April 2026
 ###########################
 
-
-### importing scripts + coding style
-
-# There are multiple ways to import functions from another script
-# NOTE: The script must be in the same folder as the script you're using
-
-# multiple functions can be imported at once by separating them with a comma
-
-# We can also import all functions from a script using the asterisk, *
-
-# If we want to import all functions from a script, we can also import the
-# script itself
-
-# To make the code more readable, we can import the script with an abbreviated
-# name. This is done by using the "as" keyword
-
+# Recap of previous sessions
 
 ### modules, code environments, module documentation
 # Modules consist of python code written by others in the python community.
@@ -63,6 +48,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 # Say we want to sum the elements of two lists. Lets explore how this is done
 # first with pure python using loops, then with numpy
+
 
 # Exercise 11
 
@@ -108,6 +94,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # function. Here we specify a header key for which all unique elements will
 # be grouped. The output of .groupby() is a collection of tuples with the value
 # used for grouping and the subset where the column holds that value
+
 
 # Exercise 12
 
