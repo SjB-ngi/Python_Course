@@ -25,6 +25,18 @@ Test cases:
 """
 
 # Write your solution below:
+def arabic_to_roman(n: int) -> str:
+    numerals = {1000: "M", 500: "D", 100: "C", 50: "L", 10: "X", 5: "V", 1: "I"}
+    result = ""
+    for value, numeral in numerals.items():
+        while n >= value:
+            result += numeral
+            n -= value
+    return result
+
+print(arabic_to_roman(17))    # XVII
+print(arabic_to_roman(86))    # LXXXVI
+print(arabic_to_roman(1555))  # MDLV
 
 
 
@@ -54,6 +66,25 @@ Test cases:
 """
 
 # Write your solution below:
+def scrabble_score(word: str) -> int:
+    letter_scores = {
+        "A": 1, "E": 1, "I": 1, "O": 1, "U": 1,
+        "L": 1, "N": 1, "R": 1, "S": 1, "T": 1,
+        "D": 2, "G": 2,
+        "B": 3, "C": 3, "M": 3, "P": 3,
+        "F": 4, "H": 4, "V": 4, "W": 4, "Y": 4,
+        "K": 5,
+        "J": 8, "X": 8,
+        "Q": 10, "Z": 10
+    }
+    score = 0
+    for letter in word.upper():
+        score += letter_scores[letter]
+    return score
+
+print(scrabble_score("quiz"))    # 22
+print(scrabble_score("cabbage")) # 14
+print(scrabble_score("PYTHON"))  # 14
 
 
 
@@ -80,6 +111,19 @@ Test cases:
 """
 
 # Write your solution below:
+def is_isogram(word: str) -> bool:
+    seen = []
+    for letter in word.lower():
+        if letter == " " or letter == "-":
+            continue
+        if letter in seen:
+            return False
+        seen.append(letter)
+    return True
+
+print(is_isogram("lumberjacks"))  # True
+print(is_isogram("six-year-old")) # True
+print(is_isogram("balloon"))      # False
 
 
 
@@ -102,6 +146,12 @@ Test cases:
 """
 
 # Write your solution below:
+def is_anagram(word1: str, word2: str) -> bool:
+    return sorted(word1.lower()) == sorted(word2.lower())
+
+print(is_anagram("stone", "tones")) # True
+print(is_anagram("earth", "heart")) # True
+print(is_anagram("hello", "world")) # False
 
 
 
@@ -129,6 +179,23 @@ Test cases:
 """
 
 # Write your solution below:
+def decimal_to_binary(n: int) -> str:
+    bits = ""
+    while n > 0:
+        bits = str(n % 2) + bits  # prepend the remainder to build the binary string
+        n //= 2
+    return bits
+
+def binary_to_decimal(b: str) -> int:
+    result = 0
+    for bit in b:
+        result = result * 2 + int(bit)  # shift left and add the next bit
+    return result
+
+print(decimal_to_binary(26))        # 11010
+print(decimal_to_binary(73))        # 1001001
+print(binary_to_decimal("11010"))   # 26
+print(binary_to_decimal("1001001")) # 73
 
 
 
@@ -149,3 +216,22 @@ Test cases:
 """
 
 # Write your solution below:
+def run_length_encode(s: str) -> str:
+    result = ""
+    count = 1
+    for i in range(1, len(s)):
+        if s[i] == s[i - 1]:
+            count += 1
+        else:
+            if count > 1:
+                result += str(count)
+            result += s[i - 1]
+            count = 1
+    if count > 1:
+        result += str(count)
+    result += s[-1]
+    return result
+
+print(run_length_encode("AAABBCCCCD"))       # 3A2B4CD
+print(run_length_encode("ZZZZYYYYXXWWWWWW")) # 4Z4Y2X6W
+print(run_length_encode("ABCD"))             # ABCD
