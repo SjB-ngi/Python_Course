@@ -1,7 +1,7 @@
 """
 Script for the "Python basics for geoscience and geotechnics" course
-from the Norwegian Geotechnical Institute. The course is held in October
-2025 in 4x4 hour sessions.
+from the Norwegian Geotechnical Institute. The course is held in September
+2026 in 4x4 hour sessions.
 
 This script contains the code that was written during the first session
 The code is for educational purposes only.
@@ -12,7 +12,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 """
 
 ###########################
-# session 1 on 6th of October 2025
+# session 1 on 15th of September 2026
 ###########################
 
 
@@ -84,7 +84,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # Here we can use some info to give file names to our images.
 
 
-### datatypes: lists, tuples, dictionaries, indices, exceptions / errors
+### datatypes: lists, dictionaries, indices, exceptions / errors
 
 # The list is defined using square brackets
 
@@ -159,7 +159,7 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # These are used to compare two values, and return a boolean value
 
 
-### control structures: conditional statements: if, elif, else, match cases
+### control structures: conditional statements: if, elif, else
 
 # control structures help to either avoid or repeat certain parts of code
 # conditional statements make use of operators to compare if certain conditions
