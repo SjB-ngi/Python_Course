@@ -5,3 +5,8 @@ __pycache__/
 
 # data files
 data/
+
+# Course organization files
+scripts/fasit/
+homework/fasit/
+homework/empty/
