@@ -73,7 +73,7 @@ print(1+1)  # Addition
 print(3-2)  # Subtraction
 print(1/2)  # Division
 print(2*4)  # Multiplication
-print(2**3)  # Exponentiation
+print(2**3) # Exponentiation
 
 
 # Integer division, floored division
