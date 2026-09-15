@@ -18,16 +18,19 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 ### introduction and overview over uv and VS Code
 
+# basic terminal usage
 
 ### basic datatypes: strings, integers, floats, print function
 
 # Datatypes
 
 # integer numbers are represented with an "int" data type
-
+1
+2
+3
 
 # decimal numbers are represented with a "float" data type
-
+1.2
 
 # text is represented with a "str" data type
 # "str" is short for string, or string of characters
@@ -35,50 +38,86 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # tripled double or single quotes, """ / ''', to construct
 # a string
 
+"Double quotes"
+'single quotes'
 
 # You may use triple quotes to write long strings over multiple lines
 
+"""
+This string
+Can go across multiple lines
+"""
 
-# You can print the data to the console by using the print() function
-
+#? You can print the data to the console by using the print() function
+1+1
+print(1+1)
 
 # You may check the datatype by using the type() function, if you want
 # to see the results, you have to print it out
+print(type(1.2))
 
 
 # you can change the data type by using the int(), float() and str()
 # functions. Data might get lost in the process
-
+print(int(1.8))
 
 ### operators: +, -, /, *, **, //, %
+1+1
+3-2
+1/2
+2*4
+print(2**3)
 
+# Integer divison, floored division
+print(7//2)
+
+# Modulo, remainder
+print(9%3)
 
 # Note that the + operator works differently for strings and numbers
+print("1"+"1")
 
+# Exercise 1 -> 5 mins
+print("Hello World!")
 
-# Exercise 1
-
-
-# Exercise 2
-
+print()
+# Exercise 2 -> 
+print(5**8)
+print(9**0.5)
+print(14%5)
+print(13//3*3)
 
 ### variables, string formatting
 
 # Variables can be assigned data by setting them equal to a value
 # python automatically assigns a data type to the variable
+print()
+abc = 12
 
+print(type(abc))
+
+abc = 23.2
+
+print(type(abc))
 
 # variable names should be explicit and informative
+UCS_sand = 12
 
+lab_test = "UCS"
+test_name = "Test1"
+image_type = ".jpg"
 
 # There are multiple ways to format a string, we focus on two
 
 # string concatenation: "string" + "another string"
+image_name = lab_test + "_" + str(test_name) + image_type
+print(image_name)
 
 
 # f-strings are assigned by adding the character f before the string
 # These are useful for having a good idea about what you're printing
-
+image_name = f"{lab_test}_{test_name}{image_type}"
+print(image_name)
 
 # formatting strings is useful when working with or saving multiple files.
 # Here we can use some info to give file names to our images.
@@ -86,26 +125,33 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 ### datatypes: lists, dictionaries, indices, exceptions / errors
 
-# The list is defined using square brackets
-
+# The list is defined using square brackets []
+test_locations = [1, 2, 3, 5]
 
 # You may access the values of the list (indexing the list) a list by using 
 # integers in square brackets directly following the variable name of the list
 # Indexing starts at 0, (i.e. the first entry is at index 0, the second at index 1, etc.)
-
+print(test_locations[0])
+print(test_locations[1])
+print(test_locations[-1])
 
 # You may add data to the list by using the .append() function
+test_locations.append(6)
 
+print(test_locations)
 
 # You can find the amount of entries of a list using len()
-
+print(len(test_locations))
 
 # You can slice a list by using colons, it returns a list
 # from (and including) the index 0 to, but not including index 2
 
+print(test_locations[0:2])
 
 # You may assign a new value to an entry of the list by using the index
+test_locations[2] = 4
 
+print(test_locations)
 
 # Dictionaries store data in an unstructured way
 # These are indexed using keys (strings)
@@ -113,58 +159,122 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # Dictionaries are defined by using curly brackets
 # Key and value pairs are separated by colon, entries
 # are separated with a comma. The values can be any data type
+test_location_dict = {}
 
+test_location_dict["Location 1"] = "Refraction"
+test_location_dict["Location 2"] = {"PSD": [0.1, 0.9]}
+test_location_dict["Location 2"] = "CPT"  # <- Overwrites the data in "Location 2"
+test_location_dict["Location 3"] = [1, 2, 3]
+
+print(test_location_dict)
 
 # We can use the value of a dictionary item by indexing it with the key
-
+print(test_location_dict["Location 2"])
 
 # Lets try to append a value to the list of UCS values for limestone
+test_location_dict["Location 3"].append(4)
 
+print(test_location_dict)
+
+print(test_location_dict.keys())
 
 # range() by default creates a range of numbers starting from 0 up to the
 # entered number at a step of 1
-
+print(list(range(0, 5)))
 
 # you can set the starting number and the step size similarly
 # to how we slice lists (start, stop, step)
-
-
+print(list(range(0, 10, 2)))
 
 # Exercise 3
+print()
+
+# Creating an empty list
+character_len_list = []
+
+# Appending lengths
+character_len_list.append(len("marl"))
+character_len_list.append(len("gneiss"))
+character_len_list.append(len("limestone"))
+character_len_list.append(len("eclogite"))
+
+# Printing the list
+print(character_len_list)
+
+# Computing the sum of the last three elements
+last_three_sum = character_len_list[-3] + character_len_list[-2] + character_len_list[-1]
+last_three_sum = sum(character_len_list[-3:]) # Alternative
+
+# Printing the result
+print(f"the result is: {last_three_sum}")
 
 
 # Exercise 4
+rock_list = ["gneiss", "marl", "limestone"]
+
+# Printing the first two elements
+rock_slice = rock_list[0:2]
+print(rock_slice)
+
+# Appending an element to the end
+rock_slice.append("greenschist")
+
+# Exchange the second element
+rock_slice[1] = "dolomite"
+
+# Printing the final list
+print(rock_slice)
 
 
 ### Boolean operators: or, and, not
 # These are used to do operations on True/False data, i.e boolean data
 
 # Boolean values are written as capitalized words:
+True # 1
+
+False # 0
 
 
 # We can turn other datatypes into boolean values by using the bool() function
 # Non-zero numbers and non-empty strings are True, zero and empty strings are False
-
+print(bool(0))
 
 # "not" is used to reverse a boolean value
+print(not True)
 
 
 # "or" is used to check if at least one of the two boolean values is True
-
+print(True or False)
+print(False or False)
+print(False or True)
 
 # "and" is used to check if both boolean values are True
+print(True and False)
+print(True and True)
+print(False and False)
 
 
 # comparison operators: <, >, <=, >=, ==, !=
 # These are used to compare two values, and return a boolean value
+print(1<3)
+
+print(3==3)
+
+print(1!=3)
 
 
-### control structures: conditional statements: if, elif, else
+### conditional statements: if, elif, else
 
 # control structures help to either avoid or repeat certain parts of code
 # conditional statements make use of operators to compare if certain conditions
 # are True or False
 
+if image_type == ".png":
+    # Inside of the if block
+    print("This is a png image")
+
+# More code
+print("loading image")
 
 # Only if the expression after if is True, the code in the indentation block
 # will be executed
@@ -172,7 +282,12 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 
 # Elif can be used for additional tests, only if the first if statement
 # is False
-
+if image_type == ".png":
+    print("This is a png image")
+elif image_type == ".gif":
+    print("This is a gif image")
+else:
+    print("Not recognized image type")
 
 # Else is used if none of the previous if or elif statements were True
 
