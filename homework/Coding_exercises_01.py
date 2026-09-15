@@ -8,12 +8,12 @@
 
 Given the variables below, do the following:
 
-1. Print a sentence using .format() that reads:
+1. Print a sentence using concatenation that reads:
    "The UCS of granite is 175 MPa."
 2. Print the same sentence using an f-string.
 3. Create and print a filename string that looks like:
    "granite_175MPa.jpg"
-   (use any combination of string formatting or concatenation)
+
 """
 
 rock_name = "granite"
@@ -85,7 +85,7 @@ A soil sample has the following properties:
   - Total weight:  W = 4.5 kN
   - Total volume:  V = 0.25 m³
   - Water content: w = 0.18  (dimensionless)
-  - Specific gravity of solids: Gs = 2.7
+  - Specific gravity of solids: Gs = 2.7 (dimensionless)
   - Unit weight of water: γ_w = 9.81 kN/m³
 
 Compute and print each of the following, rounded to 2 decimal places,
