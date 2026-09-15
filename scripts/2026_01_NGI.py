@@ -15,10 +15,8 @@ Modifications: Sjur Beyer, sjur.beyer@ngi.no
 # session 1 on 15th of September 2026
 ###########################
 
+# introduction and overview over uv and VS Code
 
-### introduction and overview over uv and VS Code
-
-# basic terminal usage
 
 ### basic datatypes: strings, integers, floats, print function
 
