@@ -7,8 +7,8 @@ This script contains the code that was written during the second session
 The code is for educational purposes only.
 All content of the repository falls under the MIT-license -> see license file.
 
-Author: Dr. Georg H. Erharter, georg.erharter@ngi.no
 Modifications: Sjur Beyer, sjur.beyer@ngi.no
+Author: Dr. Georg H. Erharter
 """
 
 ###########################
