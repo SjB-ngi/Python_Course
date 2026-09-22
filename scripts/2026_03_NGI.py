@@ -24,7 +24,7 @@ when helpful, explain unfamiliar words immediately, and give me one small next s
 jargon and long explanations unless I ask for more detail.
 """
 
-# Exercise 10
+
 
 ### importing scripts + coding style
 
@@ -104,7 +104,6 @@ list_b = [3, 5, 7, 9]
 
 
 # element wise addition is done using the + operator
-
 
 # Exercise 10
 c = [1, 2, 3, 1, 3, 3, 2, 1, 4, 6, 4, 1]
