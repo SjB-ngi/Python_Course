@@ -15,7 +15,7 @@ Author: Dr. Georg H. Erharter
 # session 4 on 24th of September 2026
 ###########################
 
-# recap
+# Recap
 
 ### plotting using matplotlib.pyplot
 # matplotlib is a plotting library for python. It is very powerful and flexible
@@ -75,10 +75,9 @@ Author: Dr. Georg H. Erharter
 # Similarly we show the plot using plt.show()
 
 
-
 # Exercise 13
 
-# Recap of the course and additional info
+# Recap of plotting and additional info
 
 ### Some domain relevant resources:
 # - mplstereonet:   https://github.com/joferkington/mplstereonet
